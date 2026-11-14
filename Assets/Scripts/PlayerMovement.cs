@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public float gravity = -9.81f;
-    public float jump = 5f;
+    public float jump = 20f;
     public float Sensivity = 2f;
 
     private CharacterController controller;
@@ -15,10 +15,12 @@ public class PlayerMovement : MonoBehaviour
     private float rotationY;
     private float verticalVelocity;
     
+    public GameObject UnderWater; 
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        UnderWater.SetActive(false);
     }
 
     void Update()
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Water"))
         {
             inwater = true;
+            UnderWater.SetActive(true);
         }
     }
 
@@ -41,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Water"))
         {
             inwater = false;
+            UnderWater.SetActive(false);
         }
     }
     
