@@ -3,14 +3,16 @@ using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
-    public float Sensitivity = 250f;
+    public float Sensitivity = 5f;
     private float xRotation = 0f;
     
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+       Cursor.lockState = CursorLockMode.Locked;
+       Cursor.visible = false;
+       //Cursor.lockState = CursorLockMode.None;
+       //Cursor.visible = true;
     }
 
     void Update()

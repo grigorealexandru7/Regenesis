@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     public float gravity = -9.81f;
     public float jump = 20f;
-    public float Sensivity = 2f;
+    public float Sensivity = 1f;
 
     private CharacterController controller;
     private Vector3 movement;
