@@ -10,6 +10,9 @@ public class Mission : MonoBehaviour
 
     public GameObject DONEUI;
     public GameObject MISSION;
+    
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     void Start()
     {
         
@@ -21,6 +24,7 @@ public class Mission : MonoBehaviour
         counter.text = left.ToString();
         if(left==0)
         {
+            audioSource.PlayOneShot(audioClip);
             color = 1;
             water.SetActive(true);
             badwater.SetActive(false);
