@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Plant : MonoBehaviour
+public class Plant : MonoBehaviour, IInteractable
 {
     public Seedtaken seedtaken;
     public PlantedCount planted;
@@ -12,7 +12,7 @@ public class Plant : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnMouseDown()
+    public void Interact()
     {
         if (seedtaken.taken == true && ok ==1)
         {

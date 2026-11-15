@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class Openmission2 : MonoBehaviour
+public class Openmission2 : MonoBehaviour,IInteractable
 {
     public GameObject MISSION2;
     public GameObject counter;
     private int ok = 1;
-    private void OnMouseDown()
+    public void Interact()
     {
         if(ok ==1)
         {

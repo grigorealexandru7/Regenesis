@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void rotate()
     {
-        float mouseX = Mouse.current.delta.x.ReadValue() * Sensivity;
+        float mouseX = Mouse.current.delta.x.ReadValue() * Sensivity * Time.deltaTime;
 
         rotationY += mouseX;
 
