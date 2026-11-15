@@ -7,6 +7,9 @@ public class Mission : MonoBehaviour
     public int color = 0;
     public GameObject water;
     public GameObject badwater;
+
+    public GameObject DONEUI;
+    public GameObject MISSION;
     void Start()
     {
         
@@ -21,6 +24,10 @@ public class Mission : MonoBehaviour
             color = 1;
             water.SetActive(true);
             badwater.SetActive(false);
+            DONEUI.SetActive(true);
+            MISSION.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }
