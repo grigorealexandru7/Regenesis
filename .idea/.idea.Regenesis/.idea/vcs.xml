@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Assets/Minigames/MiniGame1/Desktop" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Assets/Minigames/MiniGame1/Desktop/Diverse/ROBOTICA/10.01.2026/CLASSES" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Assets/Minigames/MiniGame1/Desktop/Diverse/ROBOTICA/24.09.2026/Primul program" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Assets/Minigames/MiniGame1/Desktop/Diverse/ROBOTICA/24.09.2026/curs" vcs="Git" />
   </component>
 </project>

@@ -15,12 +15,17 @@ public class PlayerMovement : MonoBehaviour
     private float rotationY;
     private float verticalVelocity;
     
-    public GameObject UnderWater; 
+    public Mission mission;
+    public GameObject UnderWater;
+    public GameObject UnderwaterGOOD;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        UnderWater.SetActive(false);
+        if(mission.color==0) 
+            UnderWater.SetActive(false);
+        else
+            UnderwaterGOOD.SetActive(false);
     }
 
     void Update()
@@ -35,7 +40,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Water"))
         {
             inwater = true;
-            UnderWater.SetActive(true);
+            if(mission.color==0) 
+                UnderWater.SetActive(true);
+            else
+                UnderwaterGOOD.SetActive(true);
         }
     }
 
@@ -44,7 +52,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Water"))
         {
             inwater = false;
-            UnderWater.SetActive(false);
+            if(mission.color==0) 
+                UnderWater.SetActive(false);
+            else
+                UnderwaterGOOD.SetActive(false);
         }
     }
     

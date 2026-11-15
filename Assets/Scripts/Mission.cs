@@ -2,8 +2,11 @@ using UnityEngine;
 using TMPro;
 public class Mission : MonoBehaviour
 {
-    public int left = 6;
+    public int left = 5;
     public TMP_Text counter;
+    public int color = 0;
+    public GameObject water;
+    public GameObject badwater;
     void Start()
     {
         
@@ -13,5 +16,11 @@ public class Mission : MonoBehaviour
     void Update()
     {
         counter.text = left.ToString();
+        if(left==0)
+        {
+            color = 1;
+            water.SetActive(true);
+            badwater.SetActive(false);
+        }
     }
 }
