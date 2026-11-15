@@ -13,6 +13,8 @@ public class Mission : MonoBehaviour
     
     public AudioSource audioSource;
     public AudioClip audioClip;
+
+    public GameObject Grossfilter;
     void Start()
     {
         
@@ -30,6 +32,7 @@ public class Mission : MonoBehaviour
             badwater.SetActive(false);
             DONEUI.SetActive(true);
             MISSION.SetActive(false);
+            Grossfilter.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
