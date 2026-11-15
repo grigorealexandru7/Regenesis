@@ -11,6 +11,7 @@ public class Correct : MonoBehaviour
     public GameObject dead;
     public GameObject alive;
     public GameObject sign;
+    public GameObject corals;
     void Start()
     {
         
@@ -33,6 +34,7 @@ public class Correct : MonoBehaviour
             dead.SetActive(false);
             alive.SetActive(true);
             sign.SetActive(false);
+            corals.SetActive(true);
         }
     }
 }
